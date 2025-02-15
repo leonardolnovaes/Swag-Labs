@@ -1,0 +1,29 @@
+{
+  "dependencies": {
+    "cypress": "^14.0.3"
+  },
+  "name": "swag-labs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "devDependencies": {
+    "@types/node": "^22.13.4",
+    "allure-cypress": "^3.1.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.7.3"
+  },
+  "scripts": {
+    "cy:open": "npx cypress open",
+    "cy:run": "npx cypress run"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/leonardolnovaes/Swag-Labs.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/leonardolnovaes/Swag-Labs/issues"
+  },
+  "homepage": "https://github.com/leonardolnovaes/Swag-Labs#readme"
+}
