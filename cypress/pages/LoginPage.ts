@@ -9,7 +9,7 @@ class LoginPage {
   private logoutButton = "#logout_sidebar_link";
 
   visit() {
-    cy.visit("https://www.saucedemo.com/");
+    cy.visit("/");
     return this;
   }
 
