@@ -12,8 +12,8 @@
     "typescript": "^5.7.3"
   },
   "scripts": {
-    "cy:open": "npx cypress open",
-    "cy:run": "npx cypress run"
+    "cy:open": "npx cypress open --e2e --browser chrome",
+    "cy:run": "npx cypress run --e2e --browser chrome"
     
   },
   "repository": {

@@ -1,5 +1,6 @@
 import LoginPage from "../pages/LoginPage";
 import login from "../fixtures/login.json";
+import cypress = require("cypress");
 
 describe("Testes de Login", () => {
   beforeEach(() => {

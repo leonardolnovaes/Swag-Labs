@@ -1,26 +1,19 @@
-import cypress from "cypress";
+import LoginElements from "./elements/LoginElements";
 
 class LoginPage {
-  private usernameInput = "[data-test=username]";
-  private passwordInput = "[data-test=password]";
-  private loginButton = "[data-test=login-button]";
-  private errorMessage = "[data-test=error]";
-  private menuButton = ".bm-burger-button";
-  private logoutButton = "#logout_sidebar_link";
-
   visit() {
     cy.visit("/");
     return this;
   }
 
   fillLogin(username: string, password: string) {
-    cy.get(this.usernameInput).type(username);
-    cy.get(this.passwordInput).type(password);
+    cy.get(LoginElements.usernameInput).type(username);
+    cy.get(LoginElements.passwordInput).type(password);
     return this;
   }
 
   submit() {
-    cy.get(this.loginButton).click();
+    cy.get(LoginElements.loginButton).click();
     return this;
   }
 
@@ -30,13 +23,13 @@ class LoginPage {
   }
 
   validateErrorMessage(expectedMessage: string) {
-    cy.get(this.errorMessage).should("have.text", expectedMessage);
+    cy.get(LoginElements.errorMessage).should("have.text", expectedMessage);
     return this;
   }
 
   logout() {
-    cy.get(this.menuButton).click();
-    cy.get(this.logoutButton).click();
+    cy.get(LoginElements.menuButton).click();
+    cy.get(LoginElements.logoutButton).click();
     return this;
   }
 }
