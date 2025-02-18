@@ -13,8 +13,7 @@
   },
   "scripts": {
     "cy:open": "npx cypress open --e2e --browser chrome",
-    "cy:run": "npx cypress run --e2e --browser chrome"
-    
+    "cy:run": "cypress run --e2e --browser chrome --record --parallel"
   },
   "repository": {
     "type": "git",

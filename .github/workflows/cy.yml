@@ -30,4 +30,4 @@ jobs:
         env:
           CYPRESS_RECORD_KEY: ${{ secrets.CYPRESS_RECORD_KEY }}
         run: |
-          npm run cy:run --record --parallel --ci-build-id=$(date +%s) --group container-${{ matrix.containers }}
+          npx cypress run --record --parallel --ci-build-id=github-${{ github.run_id }} --group container-${{ matrix.container }}
